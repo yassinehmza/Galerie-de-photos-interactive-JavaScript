@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie de photos interactive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="image">
+    Survolez une image ci-dessous pour l’afficher ici
+  </div>
+
+  <div id="gallery">
+    <img class="preview"
+         alt="Belle montagne"
+         src="https://via.placeholder.com/150/0000FF"
+         onmouseover="upDate(this)"
+         onmouseout="unDo()">
+
+    <img class="preview"
+         alt="Soleil couchant"
+         src="https://via.placeholder.com/150/FF0000"
+         onmouseover="upDate(this)"
+         onmouseout="unDo()">
+
+    <img class="preview"
+         alt="Forêt tranquille"
+         src="https://via.placeholder.com/150/00FF00"
+         onmouseover="upDate(this)"
+         onmouseout="unDo()">
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
